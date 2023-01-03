@@ -1,5 +1,5 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin'); //eslint-disable-line
+const HtmlWebpackPlugin = require("html-webpack-plugin"); //eslint-disable-line
 
 module.exports = {
   mode: 'development',
@@ -14,15 +14,23 @@ module.exports = {
     }),
   ],
   output: {
-    filename: 'main.js',
+    filename: '[name].js',
     path: path.resolve(__dirname, 'dist'),
     clean: true,
   },
   module: {
     rules: [
       {
+        test: /\.html$/i,
+        use: 'html-loader',
+      },
+      {
         test: /\.css$/i,
         use: ['style-loader', 'css-loader'],
+      },
+      {
+        test: /\.(png|jpg|svg)$/,
+        type: 'asset',
       },
     ],
   },
