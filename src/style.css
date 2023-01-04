@@ -1,13 +1,13 @@
 body {
-  width: 100%;
   background-color: rgb(246, 245, 245);
 }
 
 .nav-bar {
   display: flex;
-  margin-left: 20%;
+  margin-left: 10%;
   align-items: center;
   margin-bottom: 20px;
+  justify-content: space-between;
 }
 
 .items li {
@@ -37,19 +37,21 @@ body {
 .nav-bar ul li {
   color: rgb(9, 12, 12);
   padding: 4%;
-  font-size: 30px;
+  font-size: 28px;
   list-style: none;
+  margin-left: 50%;
 }
 
 .nav-bar ul li:hover {
   color: rgb(0, 0, 0);
   padding: 4%;
-  font-size: 30px;
+  font-size: 28px;
+  margin-left: 50%;
   text-decoration: underline;
 }
 
 .items {
-  padding-top: 80px;
+  padding-top: 20px;
 }
 
 .items ul {
@@ -60,7 +62,6 @@ body {
 
 header {
   padding-top: 20px;
-  width: 100%;
   display: flex;
   height: 80px;
   align-items: center;
@@ -102,6 +103,7 @@ img {
 .like-icon {
   width: 30px;
   height: 30px;
+  color: rgba(255, 0, 0, 0.949);
 }
 
 footer {
