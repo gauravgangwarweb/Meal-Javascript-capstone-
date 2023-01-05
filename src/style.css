@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+.popup-dtls h3 {
+  font-size: 1.5em;
+  font-family: 'Fredoka One', cursive;
+  font-weight: 200;
+}
+
 body {
   background-color: rgb(246, 245, 245);
 }
@@ -15,7 +23,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 300px;
   border: 1px solid rgb(181, 181, 181);
   width: 80%;
   padding: 6%;
@@ -72,9 +79,9 @@ header {
   font-size: 30px;
 }
 
-img {
+li img {
   width: 90%;
-  height: 140px;
+  height: 210px;
   object-fit: cover;
   border-radius: 50px;
 }
@@ -140,4 +147,42 @@ footer h4 {
   width: 30px;
   height: 30px;
   margin: auto;
+}
+
+/* popup */
+.popup-block {
+  padding: 5%;
+  display: none;
+}
+
+.popup {
+  position: relative;
+  padding: 5%;
+  background-color: aliceblue;
+  border: 1px solid black;
+  box-shadow: rgba(6, 24, 44, 0.4) 0 0 0 2px, rgba(6, 24, 44, 0.65) 0 4px 6px -1px, rgba(255, 255, 255, 0.08) 0 1px 0 inset;
+}
+
+.popup-img {
+  display: flex;
+  justify-content: center;
+}
+
+.popup-img img {
+  border-radius: 5%;
+  width: 60%;
+  height: 510px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0 2px 4px 0, rgba(14, 30, 37, 0.32) 0 2px 16px 0;
+}
+
+.popup-dtls {
+  margin-top: 5%;
+  text-align: center;
+}
+
+.cross {
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  cursor: pointer;
 }
