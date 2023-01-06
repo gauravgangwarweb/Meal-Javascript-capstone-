@@ -1,5 +1,5 @@
 import cardsTemplate from './cardstemplate.js';
-import mealsCounter from './counter.js';
+import mealsCounter from './mealsCounter.js';
 
 const showCards = async () => {
   const url = 'https://www.themealdb.com/api/json/v1/1/filter.php?c=Vegetarian';
