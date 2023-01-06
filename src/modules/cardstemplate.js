@@ -17,8 +17,8 @@ const cardsTemplate = async (data) => {
       <button class="comments" id=${x.idMeal}>Comments</button>
       </div>
       </div>
-
   </li>`;
+  // mealsCounter()
   });
   // popup-part
   const commentBtns = document.querySelectorAll('.comments');

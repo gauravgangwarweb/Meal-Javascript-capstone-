@@ -48,11 +48,26 @@ body {
 }
 
 .nav-bar ul li {
+  display: flex;
   color: rgb(9, 12, 12);
   padding: 4%;
   font-size: 28px;
   list-style: none;
   margin-left: 50%;
+  align-items: center;
+}
+
+#number {
+  display: flex;
+  border: 1px solid;
+  padding: 5% 10%;
+  font-size: 15px;
+  border-radius: 50%;
+  margin-bottom: 16px;
+  margin-left: -3px;
+  color: #fff;
+  background-color: rgb(80, 80, 216);
+  align-items: center;
 }
 
 .nav-bar ul li:hover {
