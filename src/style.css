@@ -249,3 +249,20 @@ footer {
   right: 3%;
   cursor: pointer;
 }
+
+.popup-discription {
+  text-align: center;
+}
+
+.comment-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.pop-name {
+  color: red;
+}
+
+.pop-comments {
+  color: green;
+}
