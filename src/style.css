@@ -23,6 +23,10 @@ body {
   justify-content: space-between;
 }
 
+.mobile-nav {
+  display: none;
+}
+
 .items li {
   margin-top: 10px;
   display: flex;
@@ -248,4 +252,125 @@ footer {
   top: 3%;
   right: 3%;
   cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+  .nav-bar {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: flex;
+    margin: 0;
+    padding: 50px 0;
+    list-style: none;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(10px);
+    background: rgba(60, 33, 114, 0.7);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    height: 100%;
+  }
+
+  .mobile-nav li {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    padding-left: 25%;
+    padding-top: 20%;
+    color: rgb(240, 231, 255);
+    font-size: 30px;
+  }
+
+  .mobile-nav-header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .fa-circle-xmark {
+    color: #eceaed;
+    width: 10px;
+    height: 20px;
+  }
+
+  #onmeals {
+    display: flex;
+    align-items: center;
+  }
+
+  #number {
+    padding: 3%;
+    font-size: 60%;
+    height: 5px;
+    margin-left: -1px;
+    border: none;
+  }
+
+  .items ul {
+    display: block;
+    grid-gap: 20px;
+  }
+
+  .items li {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    width: 80%;
+    padding: 6%;
+    border-radius: 10px;
+    background-color: rgb(231, 232, 232);
+    box-shadow: rgba(0, 0, 0, 0.3) 0 19px 38px, rgba(0, 0, 0, 0.22) 0 15px 12px;
+  }
+
+  .header-mobile {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #logo {
+    padding-left: 10%;
+  }
+
+  .fa-bars {
+    color: black;
+    padding: 10px;
+    width: 100px;
+    height: 50px;
+    border-radius: 50%;
+    justify-content: flex-end;
+  }
+
+  .fa-xmark {
+    color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 40px;
+  }
+
+  .description-container {
+    width: 100%;
+    height: 150px;
+    background-size: cover;
+    border-bottom: 1px solid rgb(215, 184, 255);
+  }
+
+  .description {
+    display: none;
+    padding-top: 10px;
+    width: 60%;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    color: rgb(147, 129, 255);
+  }
 }
