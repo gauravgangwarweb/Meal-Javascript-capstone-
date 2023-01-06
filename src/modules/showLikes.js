@@ -1,5 +1,5 @@
 export const getLikes = async () => {
-  const url = await fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/jPgcmki2kIAL2YLBRHYk/likes');
+  const url = await fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/hOVVEplHVzoMZ1QpOtNU/likes');
   const result = await url.json();
   const data = result;
   return data;
