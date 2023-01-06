@@ -45,4 +45,15 @@ const cardsTemplate = async (data) => {
   });
 };
 
+const hamburger = document.getElementById('hamburger');
+const crossBtn = document.getElementById('close-button');
+const mobileNav = document.querySelector('.mobile-nav');
+
+function toggleNav() {
+  mobileNav.classList.toggle('df');
+}
+
+hamburger.addEventListener('click', toggleNav);
+crossBtn.addEventListener('click', toggleNav);
+
 export default cardsTemplate;

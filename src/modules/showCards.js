@@ -9,5 +9,4 @@ const showCards = async () => {
       mealsCounter(data.meals.length);
     });
 };
-
 export default showCards;
