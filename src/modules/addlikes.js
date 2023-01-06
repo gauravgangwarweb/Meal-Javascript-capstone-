@@ -1,5 +1,5 @@
 const postLike = async (id) => {
-  const url = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/jPgcmki2kIAL2YLBRHYk/likes';
+  const url = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/hOVVEplHVzoMZ1QpOtNU/likes';
   const requestData = {
     item_id: id,
   };
