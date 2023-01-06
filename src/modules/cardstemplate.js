@@ -19,22 +19,10 @@ const cardsTemplate = async (data) => {
       </div>
 
   </li>`;
-
-  //   `<li>
-  //   <img src=${x.strMealThumb} alt="" id="item-img">
-  //   <div class="like-container">
-  //     <h5>${x.strMeal}</h5>
-  //   </div>
-  //   <div class="likes-comments">
-  //     <i id=${x.idMeal}class="like-icon fa-solid fa-heart"></i>
-  //     <span id= "like-text" id=${x.idMeal}>${showLikes(x.idMeal, likesData)}</span>
-  //   <button class="comments" id=${x.idMeal}>Comments</button>
-  //  </div>
-  // </li>`;
   });
   // popup-part
   const commentBtns = document.querySelectorAll('.comments');
-  const bodyParts = document.querySelector('.body-parts');
+  const bodyParts = document.querySelector('.main-content');
   const popupPart = document.querySelector('.popup-block');
   commentBtns.forEach((x) => {
     x.addEventListener('click', (e) => {

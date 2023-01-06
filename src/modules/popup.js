@@ -12,7 +12,7 @@ const popupTemplate = (data) => {
 </div>`;
 
   const cross = document.querySelector('.cross');
-  const bodyParts = document.querySelector('.body-parts');
+  const bodyParts = document.querySelector('.main-content');
   cross.addEventListener('click', () => {
     popupBlock.style.display = 'none';
     bodyParts.style.display = 'block';
