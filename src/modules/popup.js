@@ -1,5 +1,6 @@
 import addComment from './addComment.js';
 import getComments from './showComment.js';
+import commentsCounter from './commentsCounter.js';
 
 const popupTemplate = async (data) => {
   const popupBlock = document.querySelector('.popup-block');
@@ -25,7 +26,9 @@ const popupTemplate = async (data) => {
       <input class="submit" type="submit" value="Comment" required>
     </form>
     <div class="show-comments">
-      <h2>Comments</h2>
+      <div class="comments-child">
+        <h2>Comments</h2> <span class="counter-div"></span>
+      </div>
       <div id=${meal.idMeal} class="comments-block"></div>
     </div>
   </div>
@@ -47,9 +50,12 @@ const popupTemplate = async (data) => {
     } else {
       commentsBlock.innerHTML = '';
       commentsArray.forEach((x) => {
-        commentsBlock.innerHTML += `<p>[${x.creation_date}] <span class="pop-name">${x.username}</span>: &nbsp<span class="pop-comments">${x.comment}</span></p>`;
+        commentsBlock.innerHTML += `<p class="comment-p">[${x.creation_date}] <span class="pop-name">${x.username}</span>: &nbsp<span class="pop-comments">${x.comment}</span></p>`;
       });
     }
+    const commentsCounterDiv = document.querySelector('.counter-div');
+    const commentsParaArray = document.querySelectorAll('.comment-p');
+    commentsCounterDiv.innerHTML = `<span>(${commentsCounter(commentsParaArray)})</span>`;
   };
 
   showComment();
