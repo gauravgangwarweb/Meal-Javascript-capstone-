@@ -1,4 +1,4 @@
-import mealsCounter from './counter';
+import mealsCounter from './mealsCounter.js';
 
 document.body.innerHTML = `<body>
 <div class="popup-block"></div>
